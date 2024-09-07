@@ -15,22 +15,29 @@
        .app-list {
             display: flex;
             flex-direction: column;
-            align-items: center;  /* リスト全体を中央揃えにする */
-            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
         }
         .app-item {
             display: flex;
             align-items: center;
-            justify-content: center;  /* 各アプリの要素を横並びで中央揃えにする */
-            margin: 10px 0;
+            margin-bottom: 20px;
         }
+        
         .app-item img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
+            width: 80px; /* アイコンの幅を大きく */
+            height: 80px; /* アイコンの高さを大きく */
+            margin-right: 20px; /* アイコンとテキストの間に余白 */
         }
+        
+        .app-item span {
+            font-size: 24px; /* テキストを大きく */
+            margin-right: 20px; /* テキストとボタンの間に余白 */
+        }
+        
         .app-item .btn {
-            margin-left: 10px;
+            font-size: 20px; /* ボタンのテキストを大きく */
+            padding: 10px 20px; /* ボタン自体を大きく */
         }
         .btn {
             padding: 10px 15px;
