@@ -3,32 +3,39 @@ body {
     padding: 20px;
 }
 
-h1 {
-    text-align: center;
+header {
+    text-align: center; /* h1, h2を含むheader内のすべてを中央揃え */
 }
+
+h1, h2 {
+    margin: 0; /* 必要に応じて、上下の余白を調整 */
+}
+
 
 .app-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* 各 app-item を横並びに配置 */
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap; /* 必要に応じて複数行に折り返す */
 }
 
 .app-item {
     display: flex;
+    flex-direction: column; /* 画像、テキスト、ボタンを縦に並べる */
     align-items: center;
-    margin-bottom: 20px;
+    margin: 20px; /* 各アイテム間に余白を追加 */
 }
 
 .app-item img {
     width: 80px; 
     height: 80px;
-    margin-right: 20px;
+    margin-bottom: 10px; /* ボタンとの間に余白を追加 */
 }
 
 .app-item span {
     font-size: 24px;
-    margin-right: 20px;
+    margin-bottom: 10px; /* ボタンとの間に余白を追加 */
 }
 
 .btn {
@@ -39,12 +46,14 @@ h1 {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .btn:hover {
     background-color: #0056b3;
 }
 
+/* モーダルのスタイル */
 .modal {
     display: none;
     position: fixed;
