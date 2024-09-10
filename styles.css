@@ -1,16 +1,25 @@
+/* 全体の背景画像を追加 */
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    background-image: url('./IMG_0639.jpg'); /* 背景画像のパス */
+    background-size: cover; /* 背景画像を全体にフィットさせる */
+    background-position: center; /* 画像を中央に配置する */
+    background-repeat: no-repeat; /* 背景画像を繰り返さない */
 }
 
-header {
-    text-align: center; /* h1, h2を含むheader内のすべてを中央揃え */
+/* 黒のオーバーレイセクション */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒 */
+    padding: 50px;
+    text-align: center;
 }
 
 h1, h2 {
     margin: 0; /* 必要に応じて、上下の余白を調整 */
+    color: white; /* テキストの色を白に */
 }
-
 
 .app-list {
     display: flex;
@@ -18,6 +27,7 @@ h1, h2 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; /* 必要に応じて複数行に折り返す */
+    margin-top: 30px;
 }
 
 .app-item {
@@ -25,10 +35,14 @@ h1, h2 {
     flex-direction: column; /* 画像、テキスト、ボタンを縦に並べる */
     align-items: center;
     margin: 20px; /* 各アイテム間に余白を追加 */
+    background-color: rgba(0, 0, 0, 0.7); /* 黒の半透明背景 */
+    padding: 20px;
+    border-radius: 10px;
+    color: white; /* テキストの色を白に */
 }
 
 .app-item img {
-    width: 80px; 
+    width: 80px;
     height: 80px;
     margin-bottom: 10px; /* ボタンとの間に余白を追加 */
 }
@@ -47,6 +61,11 @@ h1, h2 {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+.btn-placeholder {
+    height: 40px; /* ボタンと同じ高さに設定 */
+    visibility: hidden; /* 見えない状態にする */
 }
 
 .btn:hover {
