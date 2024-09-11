@@ -3,10 +3,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('./IMG_0639.jpg'); /* 背景画像のパス */
+    background-image: url('./aseets/IMG_0639.jpg'); /* 背景画像のパス */
     background-size: cover; /* 背景画像を全体にフィットさせる */
     background-position: center; /* 画像を中央に配置する */
     background-repeat: no-repeat; /* 背景画像を繰り返さない */
+    background-attachment: fixed; /* 背景を固定 */
 }
 
 /* 黒のオーバーレイセクション */
@@ -17,43 +18,48 @@ body {
 }
 
 h1, h2 {
-    margin: 0; /* 必要に応じて、上下の余白を調整 */
+    margin: 0;
     color: white; /* テキストの色を白に */
+}
+
+/* App List Section */
+#app {
+    padding: 60px 0; /* 上下に余白を追加 */
 }
 
 .app-list {
     display: flex;
-    flex-direction: row; /* 各 app-item を横並びに配置 */
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* 必要に応じて複数行に折り返す */
+    flex-wrap: wrap;
     margin-top: 30px;
 }
 
 .app-item {
     display: flex;
-    flex-direction: column; /* 画像、テキスト、ボタンを縦に並べる */
+    flex-direction: column;
     align-items: center;
-    margin: 20px; /* 各アイテム間に余白を追加 */
-    background-color: rgba(0, 0, 0, 0.7); /* 黒の半透明背景 */
+    width: 250px; /* 固定幅に設定 */
+    margin: 20px;
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* 黒の半透明背景 */
     border-radius: 10px;
     color: white; /* テキストの色を白に */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 軽いシャドウを追加 */
 }
 
 .app-item img {
     width: 80px;
     height: 80px;
-    margin-bottom: 10px; /* ボタンとの間に余白を追加 */
+    margin-bottom: 10px;
 }
 
 .app-item span {
     font-size: 24px;
-    margin-bottom: 10px; /* ボタンとの間に余白を追加 */
+    margin-bottom: 10px;
 }
 
 .btn {
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 20px;
     background-color: #007BFF;
     color: white;
@@ -64,11 +70,47 @@ h1, h2 {
 }
 
 .btn-placeholder {
-    height: 40px; /* ボタンと同じ高さに設定 */
+    height: 40px;
     visibility: hidden; /* 見えない状態にする */
 }
 
 .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Us Section */
+#contact {
+    max-width: 600px;
+    margin: 80px auto; /* 上下左右に余白を追加し、中央寄せ */
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* シャドウ効果を追加 */
+    border-radius: 10px;
+    text-align: center;
+}
+
+#contact h5 {
+    color: #ffffff;
+    text-align: left;
+}
+
+#contact p, #contact a {
+    color: #ffffff;
+}
+
+#contact a {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#contact a:hover {
     background-color: #0056b3;
 }
 

@@ -15,32 +15,42 @@
     </div>
 </header>
 
-<div class="app-list">
-    <div class="app-item">
-        <a href="https://apps.apple.com/app/id6479390804" target="_blank">
-            <img src="./aseets/icon3.png" alt="App3 Icon">
-        </a>
-        <span>かけいぼ</span>
-        <p>試行錯誤した最初のアプリです</p>
-        <div class="btn-placeholder"></div> 
+<section id="app">
+    <div class="app-list">
+        <div class="app-item">
+            <a href="https://apps.apple.com/app/id6479390804" target="_blank">
+                <img src="./aseets/icon3.png" alt="App3 Icon">
+            </a>
+            <span>かけいぼ</span>
+            <p>試行錯誤した最初のアプリです</p>
+            <div class="btn-placeholder"></div> <!-- ダミーのボタン領域 -->
+        </div>
+        <div class="app-item">
+            <a href="https://apps.apple.com/app/id6503039143" target="_blank">
+                <img src="./aseets/icon1.png" alt="App1 Icon">
+            </a>
+            <span>わすれん防</span>
+            <p>シフト表を忘れるので作りました〜</p>
+            <button class="btn" onclick="showPolicy('app1')">プライバシーポリシー</button>
+        </div>
+        <div class="app-item">
+            <a href="https://apps.apple.com/jp/app/id6670524806" target="_blank">
+                <img src="./aseets/icon2.png" alt="App2 Icon">
+            </a>
+            <span>映メモ</span>
+            <p>自分が使いたい機能をぶち込みました〜</p>
+            <button class="btn" onclick="showPolicy('app2')">プライバシーポリシー</button>
+        </div>
     </div>
-    <div class="app-item">
-        <a href="https://apps.apple.com/app/id6503039143" target="_blank">
-            <img src="./aseets/icon1.png" alt="App1 Icon">
-        </a>
-        <span>わすれん防</span>
-        <p>シフト表を忘れるので作りました〜</p>
-        <button class="btn" onclick="showPolicy('app1')">プライバシーポリシー</button>
-    </div>
-    <div class="app-item">
-        <a href="https://apps.apple.com/jp/app/id6670524806" target="_blank">
-            <img src="./aseets/icon2.png" alt="App2 Icon">
-        </a>
-        <span>映メモ</span>
-        <p>自分が使いたい機能をぶち込みました〜</p>
-        <button class="btn" onclick="showPolicy('app2')">プライバシーポリシー</button>
-    </div>
-</div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <!-- Google Formsへのリンクを追加 -->
+    <p>お問い合わせは、以下のリンクからGoogleフォームをご利用ください〜</p>
+    <a href="https://forms.gle/LDW4r4tKtneoDZCW6" target="_blank" class="btn">Googleフォームでお問い合わせ</a>
+</section>
 
 <!-- Modal -->
 <div id="policyModal" class="modal">
